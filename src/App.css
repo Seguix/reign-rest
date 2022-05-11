@@ -1,0 +1,44 @@
+.main {
+    height: 100vh;
+    background-color: #fcfcfc;  
+}
+
+@media (min-width: 800px) {
+    .main {
+        height: 100vh;
+    }
+}
+
+.container {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 100%;
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.warning {
+    margin-top: 1rem;
+    text-align: center;
+}

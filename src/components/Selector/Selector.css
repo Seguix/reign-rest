@@ -1,0 +1,57 @@
+.select-container {
+  display: inline-block;
+  min-width: 250px;
+  position: relative;
+}
+
+.selected-text {
+  text-transform: capitalize;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  color: #343434;
+  padding: 6px 20px;
+  background-color: #fff;
+  border: solid 1px #2e2e2e;
+  border-radius: 4px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 10px 16px;
+}
+
+.select {
+  z-index: 1;
+  margin: 0;
+  margin-left: 2px;
+  padding: 0;
+  box-shadow: 0 2px 2px 0 #dad8d8;
+  position: absolute;
+  width: 100%;
+}
+
+.select_option {
+  color: #343434;
+  font-size: 0.875rem;
+  display: flex;
+  position: relative;
+  list-style-type: none;
+  padding: 10px 0 10px 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.select_option:hover {
+  background-color: #fbfbfb;
+}
+
+.select_img {
+  margin-right: 0.875rem;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.select_text {
+  margin: auto 0;
+}

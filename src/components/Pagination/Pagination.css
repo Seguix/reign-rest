@@ -1,0 +1,65 @@
+.pagination {
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.page-link {
+  cursor: pointer;
+  font-size: 0.875rem;
+  padding: 0.345rem 0.657rem;
+  border-radius: 6px;
+  border: solid 1px #d9d9d9;
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+  background-color: #fff;
+  border: solid 1px #d9d9d9;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.page-link:not(:first-child) {
+  margin-left: 0.5rem;
+}
+
+.page-link.disabled {
+  color: #6c757d;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.page-link:hover {
+  z-index: 2;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+.page-link:focus {
+  z-index: 3;
+  color: #0a58ca;
+  background-color: #e9ecef;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.page-item:not(:first-child) .page-link {
+  margin-left: -1px;
+}
+
+.page-link.active {
+  z-index: 3;
+  color: #fff;
+  background-color: #1890ff;
+}
+
+.page-item:first-child .page-link {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.page-item:last-child .page-link {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}

@@ -1,0 +1,14 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 37px;
+  row-gap: 30px;
+  column-gap: 40px;
+}
+
+@media (min-width: 800px) {
+  .grid {
+      grid-auto-rows: 90px;
+      grid-template-columns: 1fr 1fr;
+  }
+}
